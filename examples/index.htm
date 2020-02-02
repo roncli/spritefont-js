@@ -1,0 +1,111 @@
+<html>
+    <head>
+        <script src="../dist/spritefont.min.js"></script>
+        <script>
+            document.addEventListener("DOMContentLoaded", () => {
+                const text = new SpriteFont(document.getElementById("text"), "Monolith Large");
+                const entry = document.getElementById("entry");
+
+                entry.addEventListener("keyup", () => {
+                    text.text = entry.value;
+                });
+            });
+
+            SpriteFont.setup({
+                name: "Monolith Large",
+                url: "./fonts/monolith-large.png",
+                letters: {
+                    "A": {left: 0, top: 0, width: 25, height: 40},
+                    "B": {left: 25, top: 0, width: 25, height: 40},
+                    "C": {left: 50, top: 0, width: 25, height: 40},
+                    "D": {left: 75, top: 0, width: 25, height: 40},
+                    "E": {left: 100, top: 0, width: 25, height: 40},
+                    "F": {left: 125, top: 0, width: 25, height: 40},
+                    "G": {left: 150, top: 0, width: 25, height: 40},
+                    "H": {left: 175, top: 0, width: 25, height: 40},
+                    "I": {left: 200, top: 0, width: 25, height: 40},
+                    "J": {left: 225, top: 0, width: 25, height: 40},
+                    "K": {left: 250, top: 0, width: 25, height: 40},
+                    "L": {left: 275, top: 0, width: 25, height: 40},
+                    "M": {left: 300, top: 0, width: 25, height: 40},
+                    "N": {left: 325, top: 0, width: 25, height: 40},
+                    "O": {left: 350, top: 0, width: 25, height: 40},
+                    "P": {left: 375, top: 0, width: 25, height: 40},
+                    "Q": {left: 400, top: 0, width: 25, height: 40},
+                    "R": {left: 425, top: 0, width: 25, height: 40},
+                    "S": {left: 450, top: 0, width: 25, height: 40},
+                    "T": {left: 475, top: 0, width: 25, height: 40},
+                    "U": {left: 500, top: 0, width: 25, height: 40},
+                    "V": {left: 525, top: 0, width: 25, height: 40},
+                    "W": {left: 550, top: 0, width: 25, height: 40},
+                    "X": {left: 575, top: 0, width: 25, height: 40},
+                    "Y": {left: 600, top: 0, width: 25, height: 40},
+                    "Z": {left: 625, top: 0, width: 25, height: 40},
+                    "Ä": {left: 650, top: 0, width: 25, height: 40},
+                    "Ö": {left: 675, top: 0, width: 25, height: 40},
+                    "Ü": {left: 700, top: 0, width: 25, height: 40},
+                    "a": {left: 0, top: 0, width: 25, height: 40},
+                    "b": {left: 25, top: 0, width: 25, height: 40},
+                    "c": {left: 50, top: 0, width: 25, height: 40},
+                    "d": {left: 75, top: 0, width: 25, height: 40},
+                    "e": {left: 100, top: 0, width: 25, height: 40},
+                    "f": {left: 125, top: 0, width: 25, height: 40},
+                    "g": {left: 150, top: 0, width: 25, height: 40},
+                    "h": {left: 175, top: 0, width: 25, height: 40},
+                    "i": {left: 200, top: 0, width: 25, height: 40},
+                    "j": {left: 225, top: 0, width: 25, height: 40},
+                    "k": {left: 250, top: 0, width: 25, height: 40},
+                    "l": {left: 275, top: 0, width: 25, height: 40},
+                    "m": {left: 300, top: 0, width: 25, height: 40},
+                    "n": {left: 325, top: 0, width: 25, height: 40},
+                    "o": {left: 350, top: 0, width: 25, height: 40},
+                    "p": {left: 375, top: 0, width: 25, height: 40},
+                    "q": {left: 400, top: 0, width: 25, height: 40},
+                    "r": {left: 425, top: 0, width: 25, height: 40},
+                    "s": {left: 450, top: 0, width: 25, height: 40},
+                    "t": {left: 475, top: 0, width: 25, height: 40},
+                    "u": {left: 500, top: 0, width: 25, height: 40},
+                    "v": {left: 525, top: 0, width: 25, height: 40},
+                    "w": {left: 550, top: 0, width: 25, height: 40},
+                    "x": {left: 575, top: 0, width: 25, height: 40},
+                    "y": {left: 600, top: 0, width: 25, height: 40},
+                    "z": {left: 625, top: 0, width: 25, height: 40},
+                    "ä": {left: 650, top: 0, width: 25, height: 40},
+                    "ö": {left: 675, top: 0, width: 25, height: 40},
+                    "ü": {left: 700, top: 0, width: 25, height: 40},
+                    "0": {left: 725, top: 0, width: 25, height: 40},
+                    "1": {left: 750, top: 0, width: 25, height: 40},
+                    "2": {left: 775, top: 0, width: 25, height: 40},
+                    "3": {left: 800, top: 0, width: 25, height: 40},
+                    "4": {left: 825, top: 0, width: 25, height: 40},
+                    "5": {left: 850, top: 0, width: 25, height: 40},
+                    "6": {left: 875, top: 0, width: 25, height: 40},
+                    "7": {left: 900, top: 0, width: 25, height: 40},
+                    "8": {left: 925, top: 0, width: 25, height: 40},
+                    "9": {left: 950, top: 0, width: 25, height: 40},
+                    "_": {left: 975, top: 0, width: 25, height: 40},
+                }
+            });
+        </script>
+        <style>
+            body {
+                background-color: black;
+            }
+
+            /* The backup font for characters that don't exist. */
+            #text {
+                color: #e22922;
+                font-family: Arial, Arial, Helvetica, sans-serif;
+                font-size: 36px;
+            }
+
+            #text > * {
+                vertical-align: top;
+            }
+        </style>
+    </head>
+    <body style="background-color: black;">
+        <input id="entry" value="Type Something" /><br /><br />
+        <div id="text">Type Something</div>
+    </body>
+</html>
