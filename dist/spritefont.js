@@ -45,6 +45,7 @@ class SpriteFont {
     //   ##   ##   #  #    ##
     /**
      * Gets the text of the element.
+     * @returns {string} The text.
      */
     get text() {
         return this.el.dataset.text;
@@ -52,6 +53,7 @@ class SpriteFont {
 
     /**
      * Sets the text of the element.
+     * @param {string} text The text to set.
      */
     set text(text) {
         this.el.dataset.text = text;
@@ -66,6 +68,7 @@ class SpriteFont {
     //  ###  #      # #  ####
     /**
      * Draws the text.
+     * @returns {void}
      */
     draw() {
         let html = "";
@@ -98,12 +101,13 @@ class SpriteFont {
      * @param {string} options.name The name of the font.
      * @param {string} options.url The URL of the image of the font.
      * @param {Letters} options.letters The list of available letters.
+     * @returns {void}
      */
     static setup(options) {
         SpriteFont.fonts[options.name] = {
             url: options.url,
             letters: options.letters
-        }
+        };
     }
 }
 
