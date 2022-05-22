@@ -79,7 +79,7 @@ class SpriteFont {
                 letterInfo = font.letters[letter];
 
             if (letterInfo) {
-                html = `${html}<div style="display: inline-block; width: ${letterInfo.width}px; height: ${letterInfo.height}px; background: url(${font.url}) -${letterInfo.left}px ${letterInfo.top}px"></div>`;
+                html = `${html}<div style="display: inline-block; width: ${letterInfo.width}px; height: ${letterInfo.height}px; background: url(${font.url}) -${letterInfo.left}px ${letterInfo.top}px; image-rendering: crisp-edges;"></div>`;
             } else {
                 html = `${html}<span>${letter}</span>`;
             }
