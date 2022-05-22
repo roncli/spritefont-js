@@ -155,6 +155,8 @@ filter: url(#red);
 
 ## Version History
 
-### v0.1.0 - 2/2/2020
+### v0.1.1 - 5/21/2022
+* Use crisp edges for fonts in browsers that allow it.
 
+### v0.1.0 - 2/2/2020
 * Initial version, created for Monorail Racing. (https://twitter.com/MonorailRacing)
