@@ -83,6 +83,10 @@ class SpriteFont {
             } else {
                 html = `${html}<span>${letter}</span>`;
             }
+
+            if (letter === " ") {
+                html = `${html}</div><wbr /><div style="display: inline-block;">`;
+            }
         }
 
         this.el.innerHTML = html;
