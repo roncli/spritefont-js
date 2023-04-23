@@ -155,6 +155,9 @@ filter: url(#red);
 
 ## Version History
 
+### v0.1.3 - 4/23/2023
+* Fix bugs with multiple spaces.
+
 ### v0.1.2 - 4/22/2023
 * Add word breaks for spaces.
 
