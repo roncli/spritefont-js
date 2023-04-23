@@ -71,7 +71,7 @@ class SpriteFont {
      * @returns {void}
      */
     draw() {
-        let html = "";
+        let html = "<div style=\"display: inline-block; white-space: pre;\">";
 
         for (let i = 0; i < this.el.dataset.text.length; i++) {
             const letter = this.el.dataset.text.substr(i, 1),
@@ -81,13 +81,15 @@ class SpriteFont {
             if (letterInfo) {
                 html = `${html}<div style="display: inline-block; width: ${letterInfo.width}px; height: ${letterInfo.height}px; background: url(${font.url}) -${letterInfo.left}px ${letterInfo.top}px; image-rendering: crisp-edges;"></div>`;
             } else {
-                html = `${html}<span>${letter}</span>`;
+                html = `${html}<div style="display: inline-block;">${letter}</div>`;
             }
 
             if (letter === " ") {
-                html = `${html}</div><wbr /><div style="display: inline-block;">`;
+                html = `${html}</div><wbr /><div style="display: inline-block; white-space: pre;">`;
             }
         }
+
+        html = `${html}</div>`
 
         this.el.innerHTML = html;
     }

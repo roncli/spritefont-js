@@ -156,7 +156,7 @@ filter: url(#red);
 ## Version History
 
 ### v0.1.2 - 4/22/2023
-* Add word word breaks for spaces.
+* Add word breaks for spaces.
 
 ### v0.1.1 - 5/21/2022
 * Use crisp edges for fonts in browsers that allow it.
